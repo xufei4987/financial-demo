@@ -1,0 +1,6 @@
+rootProject.name = 'stu-demo'
+include 'api'
+include 'manager'
+include 'utils'
+include 'entity'
+
