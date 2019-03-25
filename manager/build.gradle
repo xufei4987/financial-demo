@@ -1,3 +1,5 @@
 dependencies {
     implementation project(":entity")
+    implementation libs.mysql
+    implementation libs.swagger
 }

@@ -1,6 +1,7 @@
 package com.gradle.springboot.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 import javax.persistence.Entity;
@@ -14,8 +15,10 @@ import java.util.Date;
  * @Date 2019/3/23 17:24
  **/
 @Entity
+@ApiModel(description = "SCD召唤记录信息")
 public class Product {
     @Id
+    @ApiModelProperty(value = "商品主表ID", position = 1, required = true)
     private String id;
     private String name;
     private String status ;

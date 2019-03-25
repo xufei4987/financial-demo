@@ -33,9 +33,11 @@ public class ProductService {
         //设置默认值
         setDefault(product);
 
-        LOG.debug("创建产品,结果为:{}" + product);
+        Product result = repository.save(product);
 
-        return null;
+        LOG.debug("创建产品,结果为:{}" + result);
+
+        return result;
     }
 
 
